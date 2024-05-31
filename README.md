@@ -1,20 +1,29 @@
-# abes-hello-front
+# abes_hello_containers
 
-[![build-test-pubtodockerhub](https://github.com/abes-esr/abes-hello-front/actions/workflows/build-test-pubtodockerhub.yml/badge.svg)](https://github.com/abes-esr/abes-hello-front/actions/workflows/build-test-pubtodockerhub.yml) [![Docker Pulls](https://img.shields.io/docker/pulls/abesesr/abes-hello.svg)](https://hub.docker.com/r/abesesr/abes-hello/)
+This template should help get you started developing with Vue 3 in Vite.
 
-Application exemple type "Hello World" qui illustre la politique de développement de l'Abes avec des modèles pour la partie front en VueJS.
+## Recommended IDE Setup
 
-Voir aussi le back ici :  
-https://github.com/abes-esr/abes-hello-back
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
+## Customize configuration
 
-## Développements
+See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-### Utilisation en local avec Docker
+## Project Setup
 
-Voir https://github.com/abes-esr/abes-hello-docker qui propose les configurations docker pour déployer en local ou sur des env de dev, test ou prod.
+```sh
+npm install
+```
 
-### Publier une nouvelle release de l'application
+### Compile and Hot-Reload for Development
 
-Se référer à la procédure commune à toutes les applications opensource de l'Abes ici :  
-https://github.com/abes-esr/abes-politique-developpement/blob/main/01-Gestion%20du%20code%20source.md#publier-une-nouvelle-release-dune-application
+```sh
+npm run dev
+```
+
+### Compile and Minify for Production
+
+```sh
+npm run build
+```

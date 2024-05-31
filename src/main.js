@@ -1,18 +1,8 @@
-import Vue from 'vue'
+import './assets/main.css'
+import { createApp } from 'vue'
 import App from './App.vue'
-import router from './router'
-import Axios from 'axios'
-import vuetify from './plugins/vuetify';
-import store from './store'
+import axios from 'axios'
 
-
-
-Vue.config.productionTip = false;
-Vue.prototype.$http = Axios;
-
-new Vue({
-  router,
-  vuetify,
-  store,
-  render: h => h(App)
-}).$mount('#app')
+const app = createApp(App);
+app.config.globalProperties.axios = axios;
+app.mount('#app');
